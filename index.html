@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__header">Currency converter</h1>
+        </header>
+        <main>
+            <form class="form js-formRadio">
+
+                <p class="form__item"><label>Amount in PLN <input type="number" class="js-PLN"></label></p>
+                <p class="form__item"><label>EUR <input type="radio" name="currency" value="EUR" class="js-EUR"></label>
+                </p>
+                <p class="form__item"><label>USD <input type="radio" name="currency" value="USD" class="js-USD"></label>
+                </p>
+                <p class="form__item"><label>CHF <input type="radio" name="currency" value="CHF" class="js-CHF"></label>
+                </p>
+
+
+                <p class="form__item"> <button class="button js-button">Convert</button></p>
+                <p class="result js-result"></p>
+
+            </form>
+            <form class="form js-formCheckbox">
+
+                <p class="form__item"><label>Amount in PLN <input type="number" class="js-PLN2"></label></p>
+                <p class="form__item"><label>EUR <input type="checkbox" name="currency" value="EUR"
+                            class="js-EUR2"></label></p>
+                <p class="form__item"><label>USD <input type="checkbox" name="currency" value="USD"
+                            class="js-USD2"></label></p>
+                <p class="form__item"><label>CHF <input type="checkbox" name="currency" value="CHF"
+                            class="js-CHF2"></label></p>
+
+
+                <p class="form__item"><button class="button js-button2">Convert</button></p>
+                <p class="result js-resultEUR"></p>
+                <p class="result js-resultUSD"></p>
+                <p class="result js-resultCHF"></p>
+
+            </form>
+            <form class="form js-formSelect">
+
+                <p class="form__item"><label>Amount in PLN <input type="number" class="js-PLN3"></label></p>
+                <p class="form__item">
+                    <select class="js-currency">
+                        <option value="EUR">EUR</option>
+                        <option value="USD">USD</option>
+                        <option value="CHF">CHF</option>
+                    </select>
+                </p>
+
+
+                <p class="form__item"> <button class="button js-button">Convert</button></p>
+                <p class="result js-resultSelect"></p>
+
+            </form>
+        </main>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
