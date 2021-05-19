@@ -1,11 +1,9 @@
-
+{
 let formRadio = document.querySelector(".js-formRadio");
 let formCheckbox = document.querySelector(".js-formCheckbox");
 let formSelect = document.querySelector(".js-formSelect");
 
-
-formRadio.addEventListener("submit", (event) => {
-    event.preventDefault();
+const calculateResultRadio = () => {
 
     let PLN = document.querySelector(".js-PLN");
     let EUR = document.querySelector(".js-EUR");
@@ -33,9 +31,17 @@ formRadio.addEventListener("submit", (event) => {
     } else {
         result.innerHTML = `check currency radio button`;
     }
+}
 
+const init = () => {
+formRadio.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    calculateResultRadio();
 })
+}
 
+init();
 
 formCheckbox.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -117,3 +123,5 @@ if (PLN3.value <= 0 ) {
 }
     resultSelect.innerHTML = `${PLNrate.toFixed(2)} PLN = ${sum.toFixed(2)} ${currency}`
 });
+
+}
