@@ -1,18 +1,18 @@
 {
-    let formRadio = document.querySelector(".js-formRadio");
-    let formCheckbox = document.querySelector(".js-formCheckbox");
-    let formSelect = document.querySelector(".js-formSelect");
+    const formRadio = document.querySelector(".js-formRadio");
+    const formCheckbox = document.querySelector(".js-formCheckbox");
+    const formSelect = document.querySelector(".js-formSelect");
 
     const calculateResultRadio = () => {
 
-        let PLN = document.querySelector(".js-PLN");
-        let EUR = document.querySelector(".js-EUR");
-        let USD = document.querySelector(".js-USD");
-        let CHF = document.querySelector(".js-CHF");
-        let result = document.querySelector(".js-result");
+        const PLN = document.querySelector(".js-PLN");
+        const EUR = document.querySelector(".js-EUR");
+        const USD = document.querySelector(".js-USD");
+        const CHF = document.querySelector(".js-CHF");
+        const result = document.querySelector(".js-result");
 
         let sum;
-        let PLNrate = +PLN.value;
+        const PLNrate = +PLN.value;
         const EURrate = 4;
         const USDrate = 5;
         const CHFrate = 6;
@@ -34,18 +34,18 @@
     }
 
     const calculateResultCheckbox = () => {
-        let PLN2 = document.querySelector(".js-PLN2");
-        let EUR2 = document.querySelector(".js-EUR2");
-        let USD2 = document.querySelector(".js-USD2");
-        let CHF2 = document.querySelector(".js-CHF2");
-        let resultEUR = document.querySelector(".js-resultEUR");
-        let resultUSD = document.querySelector(".js-resultUSD");
-        let resultCHF = document.querySelector(".js-resultCHF");
+        const PLN2 = document.querySelector(".js-PLN2");
+        const EUR2 = document.querySelector(".js-EUR2");
+        const USD2 = document.querySelector(".js-USD2");
+        const CHF2 = document.querySelector(".js-CHF2");
+        const resultEUR = document.querySelector(".js-resultEUR");
+        const resultUSD = document.querySelector(".js-resultUSD");
+        const resultCHF = document.querySelector(".js-resultCHF");
 
         let sum1;
         let sum2;
         let sum3;
-        let PLNrate = +PLN2.value;
+        const PLNrate = +PLN2.value;
         const EURrate = 4;
         const USDrate = 5;
         const CHFrate = 6;
@@ -102,12 +102,12 @@ init();
 formSelect.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    let PLN3 = document.querySelector(".js-PLN3");
+    const PLN3 = document.querySelector(".js-PLN3");
     let currency = document.querySelector(".js-currency");
-    let resultSelect = document.querySelector(".js-resultSelect");
+    const resultSelect = document.querySelector(".js-resultSelect");
 
     let sum;
-    let PLNrate = +PLN3.value;
+    const PLNrate = +PLN3.value;
     const EURrate = 4;
     const USDrate = 5;
     const CHFrate = 6;
