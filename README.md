@@ -14,3 +14,4 @@ Technologies:
 - BEM
 - JavaScript 
 - ES6+ features
+- 
